@@ -687,7 +687,7 @@ var Templater = function(list) {
           return nodes[i].cloneNode(true);
         }
       }
-    } else if (/^tr[\s>]/.exec(item)) {
+    } else if (/^<tr[\s>]/.exec(item)) {
       var table = document.createElement('table');
       table.innerHTML = item;
       return table.firstChild;
